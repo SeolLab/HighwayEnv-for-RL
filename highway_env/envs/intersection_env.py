@@ -157,7 +157,7 @@ class IntersectionEnv(AbstractEnv):
         right_turn_radius = lane_width + 5  # [m}
         left_turn_radius = right_turn_radius + lane_width  # [m}
         outer_distance = right_turn_radius + lane_width / 2
-        access_length = 50 + 50  # [m]
+        access_length = 100 + 100  # [m]
 
         net = RoadNetwork()
         n, c, s = LineType.NONE, LineType.CONTINUOUS, LineType.STRIPED
