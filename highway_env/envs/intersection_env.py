@@ -42,7 +42,7 @@ class IntersectionEnv(AbstractEnv):
                 "duration": 26,  # [s]          # 기존 13 -> 20으로 변
                 "destination": "o1",
                 "controlled_vehicles": 1,
-                "initial_vehicle_count": 1000000000,     # 초기 차량 수 10 -> 30
+                "initial_vehicle_count": 30,     # 초기 차량 수 10 -> 30
                 "spawn_probability": 0.6,
                 "screen_width": 600,
                 "screen_height": 600,
