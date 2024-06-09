@@ -39,10 +39,10 @@ class IntersectionEnv(AbstractEnv):
                     "lateral": False,
                     "target_speeds": [0, 4.5, 9],
                 },
-                "duration": 13,  # [s]
+                "duration": 26,  # [s]          # 기존 13 -> 20으로 변
                 "destination": "o1",
                 "controlled_vehicles": 1,
-                "initial_vehicle_count": 10,
+                "initial_vehicle_count": 30,     # 초기 차량 수 10 -> 30
                 "spawn_probability": 0.6,
                 "screen_width": 600,
                 "screen_height": 600,
@@ -157,7 +157,7 @@ class IntersectionEnv(AbstractEnv):
         right_turn_radius = lane_width + 5  # [m}
         left_turn_radius = right_turn_radius + lane_width  # [m}
         outer_distance = right_turn_radius + lane_width / 2
-        access_length = 100 + 100  # [m]
+        access_length = 100 + 100  # [m]                  # 기존 50 + 50 -> 100 + 100 으로 변
 
         net = RoadNetwork()
         n, c, s = LineType.NONE, LineType.CONTINUOUS, LineType.STRIPED
