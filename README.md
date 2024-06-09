@@ -37,3 +37,17 @@ An intersection negotiation task with dense traffic.
     <em>The intersection-v0 environment.</em>
 </p>
 
+
+### Merge
+
+```python
+env = gymnasium.make("merge-v0")
+```
+
+In this task, the ego-vehicle starts on a main highway but soon approaches a road junction with incoming vehicles on the access ramp. The agent's objective is now to maintain a high speed while making room for the vehicles so that they can safely merge in the traffic.
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/eleurent/highway-env/master/../gh-media/docs/media/merge-env.gif?raw=true"><br/>
+    <em>The merge-v0 environment.</em>
+</p>
+
